@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Bitter';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 80.4%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 68.2%);
+  border-radius: 16px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 56.9%);
+}
